@@ -116,6 +116,14 @@ services/
 ```bash
 docker-compose exec web python manage.py test
 ```
+
+## API screenshots
+
+Live Swagger and API response screenshots are available in [`docs/screenshots/`](docs/screenshots/):
+
+- `swagger-overview.png` - complete endpoint catalogue
+- `products-list.png` - live response with status, headers, and JSON body
+
 31 tests covering: registration, login, product search + pagination meta, order creation (success,
 insufficient stock, duplicate product in one request, missing/malformed auth header), order list scoping
 (including staff seeing all orders), payment initiation guard clauses (already-paid order, zero-amount
