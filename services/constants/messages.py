@@ -1,0 +1,31 @@
+SUCCESS = "success"
+
+# Auth
+REGISTER_SUCCESS = "Account created successfully."
+USERNAME_ALREADY_EXISTS = "This username is already taken."
+INVALID_CREDENTIALS = "Invalid username or password."
+LOGIN_SUCCESS = "Login successful."
+
+# Orders
+ORDER_CREATED = "Order created successfully."
+ORDER_NOT_FOUND = "Order not found."
+INSUFFICIENT_STOCK = "Insufficient stock for this product."
+PRODUCT_NOT_FOUND = "One or more products in this order were not found."
+DUPLICATE_PRODUCT_IN_ORDER = "Duplicate products in a single order are not allowed."
+
+# Payments
+PAYMENT_INITIATED = "Payment initiated successfully."
+INVALID_SIGNATURE = "Invalid webhook signature."
+PAYMENT_ALREADY_PROCESSED = "This payment has already been processed."
+WEBHOOK_PROCESSED = "Webhook processed successfully."
+WEBHOOK_EVENT_IGNORED = "Webhook received; event type not actionable."
+INVALID_WEBHOOK_PAYLOAD = "Invalid webhook payload."
+ORDER_ALREADY_PAID = "This order has already been paid for."
+INVALID_ORDER_AMOUNT = "Order total must be greater than zero to initiate payment."
+
+# Auth header
+AUTH_HEADER_MISSING = "Authorization token is missing."
+AUTH_HEADER_MALFORMED = "Authorization header must be in the format: Bearer <token>"
+TOKEN_INVALID = "Invalid token."
+TOKEN_EXPIRED = "Token expired."
+USER_NOT_FOUND = "User doesn't exist."
