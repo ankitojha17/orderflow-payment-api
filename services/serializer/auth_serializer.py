@@ -12,7 +12,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         fields = ['id', 'username', 'email', 'password']
 
     def validate_username(self, username):
-        # Negative case first: reject before anything else checks it.
         if User.objects.filter(username=username).exists():
             raise serializers.ValidationError(messages.USERNAME_ALREADY_EXISTS)
         return username

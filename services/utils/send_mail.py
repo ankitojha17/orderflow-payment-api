@@ -20,11 +20,5 @@ def send_order_confirmation_email(to_email: str, order_id: int) -> None:
         message=f"Your order #{order_id} has been paid successfully. Thank you for shopping with OrderFlow!",
         from_email=settings.DEFAULT_FROM_EMAIL,
         recipient_list=[to_email],
-        # False on purpose: this always runs inside the Celery task, never
-        # synchronously in a request/response cycle, so there's no user-facing
-        # response to protect by swallowing the error. If send_mail() raises,
-        # the task's except block below needs to actually see it in order to
-        # retry — fail_silently=True would hide the failure and let Celery
-        # think the email went out when it didn't.
         fail_silently=False,
     )

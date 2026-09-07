@@ -21,13 +21,11 @@ class CreateOrderSerializer(serializers.Serializer):
     items = OrderItemInputSerializer(many=True)
 
     def validate_items(self, items):
-        # Negative case first: empty cart.
         if not items:
             raise serializers.ValidationError("At least one item is required.")
 
         product_ids = [item['product_id'] for item in items]
 
-        # Negative case: same product listed twice in one request.
         if len(product_ids) != len(set(product_ids)):
             raise serializers.ValidationError(messages.DUPLICATE_PRODUCT_IN_ORDER)
 
@@ -39,14 +37,9 @@ class CreateOrderSerializer(serializers.Serializer):
         for item in items:
             product = products_by_id.get(item['product_id'])
 
-            # Negative case: product doesn't exist / inactive / deleted.
             if not product:
                 raise serializers.ValidationError(messages.PRODUCT_NOT_FOUND)
 
-            # Negative case: not enough stock — this is a friendly pre-check
-            # for a fast validation error. It is NOT the authoritative check;
-            # the view re-checks with select_for_update() inside a transaction
-            # to guard against a race condition between this check and the write.
             if product.stock_quantity < item['quantity']:
                 raise serializers.ValidationError(f"Insufficient stock for {product.name}.")
 

@@ -21,7 +21,5 @@ class SendOrderConfirmationEmailTaskTests(TestCase):
         with self.assertRaises(Exception):
             send_order_confirmation_email_task.apply(args=['user@example.com', 1]).get()
 
-        # The underlying send_mail() was actually invoked with fail_silently=False,
-        # i.e. we're not passing fail_silently=True anywhere in the call.
         _, kwargs = mock_send_mail.call_args
         self.assertFalse(kwargs.get('fail_silently'))

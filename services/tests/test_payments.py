@@ -21,8 +21,8 @@ def _sign(body: bytes) -> str:
 
 @override_settings(
     RAZORPAY_WEBHOOK_SECRET=WEBHOOK_SECRET,
-    CELERY_TASK_ALWAYS_EAGER=True,      # run the task inline during tests — no Redis broker needed
-    CELERY_TASK_EAGER_PROPAGATES=True,  # surface task exceptions instead of swallowing them
+    CELERY_TASK_ALWAYS_EAGER=True,
+    CELERY_TASK_EAGER_PROPAGATES=True,
 )
 class RazorpayWebhookTests(APITestCase):
     def setUp(self):
@@ -112,13 +112,10 @@ class RazorpayWebhookTests(APITestCase):
         )
         self.assertEqual(response.status_code, 200)
 
-        # Untouched — an event we don't act on shouldn't flip any state.
         self.payment.refresh_from_db()
         self.assertFalse(self.payment.is_webhook_processed)
 
     def test_webhook_downgrades_to_failed_on_amount_mismatch(self):
-        # self.order.total_amount is 500 (=> 50000 paise). A captured event
-        # claiming a different amount shouldn't be trusted at face value.
         body = self._payload(amount=1, currency='INR')
         response = self.client.post(
             reverse('RazorpayWebhook'), data=body, content_type='application/json',

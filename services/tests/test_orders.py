@@ -63,7 +63,7 @@ class CreateOrderTests(APITestCase):
             reverse('CreateOrder'),
             data=json.dumps({'items': [{'product_id': self.product.id, 'quantity': 1}]}),
             content_type='application/json',
-            HTTP_AUTHORIZATION=self.token,  # missing "Bearer " prefix
+            HTTP_AUTHORIZATION=self.token,
         )
         self.assertEqual(response.status_code, 401)
 
@@ -104,6 +104,4 @@ class OrderListFilterTests(APITestCase):
         staff_token = generate_jwt(staff_user)
         response = self.client.get(reverse('OrderList'), HTTP_AUTHORIZATION=f'Bearer {staff_token}')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        # Staff sees the order created by self.user above, even though it's
-        # not their own — that's the whole point of the is_staff scoping.
         self.assertEqual(len(response.data['data']), 1)

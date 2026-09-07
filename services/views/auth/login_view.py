@@ -23,7 +23,6 @@ class LoginView(generics.CreateAPIView):
             password=serializer.validated_data['password'],
         )
 
-        # Negative case first.
         if not user:
             return ResponseHandler(
                 success=False, message=messages.INVALID_CREDENTIALS, status=status.HTTP_401_UNAUTHORIZED

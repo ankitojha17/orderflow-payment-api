@@ -23,7 +23,6 @@ class OrderDetailView(Authentication, generics.RetrieveAPIView):
             .first()
         )
 
-        # Negative case first.
         if not order:
             return ResponseHandler(success=False, message=messages.ORDER_NOT_FOUND, status=status.HTTP_404_NOT_FOUND)
 

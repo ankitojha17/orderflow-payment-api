@@ -45,8 +45,6 @@ class CreateOrderView(Authentication, generics.CreateAPIView):
         for item in items_data:
             product = Product.objects.select_for_update().get(id=item['product_id'])
 
-            # Negative case first: stock may have changed since the serializer's
-            # pre-check (another request could have bought it in between).
             if product.stock_quantity < item['quantity']:
                 raise ValidationError(f"Insufficient stock for {product.name}.")
 

@@ -11,7 +11,6 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'dev-secret-key-change-me')
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'
 ALLOWED_HOSTS = ['*']
 
-# ---------------- JWT ----------------
 JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'dev-jwt-secret-change-me')
 JWT_ALGORITHM = 'HS256'
 JWT_EXPIRATION_DELTA = datetime.timedelta(days=7)
@@ -59,7 +58,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'orderflow_core.wsgi.application'
 
-# ---------------- Database ----------------
 if os.getenv('ORDERFLOW_LOCAL', 'False') == 'True':
     DATABASES = {
         'default': {
@@ -86,21 +84,18 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-# ---------------- DRF ----------------
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'services.utils.pagination.StandardResultsPagination',
     'PAGE_SIZE': 10,
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
 
-# ---------------- Swagger ----------------
 SWAGGER_SETTINGS = {
     'SECURITY_DEFINITIONS': {
         'Bearer': {'type': 'apiKey', 'name': 'Authorization', 'in': 'header'}
     }
 }
 
-# ---------------- Redis (cache + Celery broker) ----------------
 REDIS_URL = os.getenv('REDIS_URL', 'redis://redis:6379/0')
 
 if os.getenv('ORDERFLOW_LOCAL', 'False') == 'True':
@@ -118,7 +113,6 @@ else:
         }
     }
 
-# ---------------- Celery ----------------
 CELERY_BROKER_URL = REDIS_URL
 CELERY_RESULT_BACKEND = REDIS_URL
 CELERY_ACCEPT_CONTENT = ['json']
@@ -126,12 +120,10 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Asia/Kolkata'
 
-# ---------------- Razorpay ----------------
 RAZORPAY_KEY_ID = os.getenv('RAZORPAY_KEY_ID', '')
 RAZORPAY_KEY_SECRET = os.getenv('RAZORPAY_KEY_SECRET', '')
 RAZORPAY_WEBHOOK_SECRET = os.getenv('RAZORPAY_WEBHOOK_SECRET', '')
 
-# ---------------- Email (console backend — prints to terminal, no SMTP needed for dev) ----------------
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'orderflow@example.com'
 
