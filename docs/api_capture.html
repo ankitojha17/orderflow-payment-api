@@ -1,0 +1,3745 @@
+<!doctype html><html><head><meta charset="utf-8"><title>OrderFlow Real API Evidence</title><style>body{font-family:Arial,sans-serif;background:#eef2f7;color:#172033;padding:24px}section{background:#fff;margin:20px auto;padding:22px;border-radius:8px;max-width:1100px;box-shadow:0 2px 10px #0002}h1{max-width:1100px;margin:auto}h2{color:#0b5cad}pre{white-space:pre-wrap;background:#f6f8fb;border:1px solid #d5dce7;padding:16px;overflow:auto;font-size:13px;line-height:1.4}</style></head><body><h1>OrderFlow - Live API Evidence</h1><p>Captured from the running local Django API. Credentials and JWT values are redacted before publishing.</p><section><h2>Swagger endpoint catalogue</h2><h3>Request</h3><pre>GET /swagger/
+
+Headers:
+{
+  &quot;Accept&quot;: &quot;text/html&quot;
+}
+
+Body:
+</pre><h3>Response</h3><pre>Status: 200
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:44 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;GET, HEAD, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;2160&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Set-Cookie&quot;: &quot;csrftoken=yL1T5GbOF1LCYRW6bziNvziG05kxQqcr; expires=Mon, 06 Sep 2027 08:58:44 GMT; Max-Age=31449600; Path=/; SameSite=Lax&quot;
+}
+
+Body:
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;/&gt;
+    &lt;title&gt;OrderFlow API&lt;/title&gt;
+
+    
+        
+    
+
+    
+        
+        &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/static/drf-yasg/swagger-ui-dist/favicon-32x32.png&quot;/&gt;
+    
+
+    
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/static/drf-yasg/style.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/static/drf-yasg/swagger-ui-dist/swagger-ui.css&quot;&gt;
+    
+    
+        
+    
+&lt;/head&gt;
+
+&lt;body class=&quot;swagger-body&quot;&gt;
+
+
+    
+
+
+&lt;div id=&quot;swagger-ui&quot;&gt;&lt;/div&gt;
+
+
+    
+
+
+&lt;script id=&quot;swagger-settings&quot; type=&quot;application/json&quot;&gt;{&quot;docExpansion&quot;: &quot;list&quot;, &quot;deepLinking&quot;: false, &quot;showExtensions&quot;: true, &quot;defaultModelRendering&quot;: &quot;model&quot;, &quot;defaultModelExpandDepth&quot;: 3, &quot;defaultModelsExpandDepth&quot;: 3, &quot;showCommonExtensions&quot;: true, &quot;supportedSubmitMethods&quot;: [&quot;get&quot;, &quot;put&quot;, &quot;post&quot;, &quot;delete&quot;, &quot;options&quot;, &quot;head&quot;, &quot;patch&quot;, &quot;trace&quot;], &quot;displayOperationId&quot;: true, &quot;persistAuth&quot;: false, &quot;refetchWithAuth&quot;: false, &quot;refetchOnLogout&quot;: false, &quot;fetchSchemaWithQuery&quot;: true}&lt;/script&gt;
+&lt;script id=&quot;oauth2-config&quot; type=&quot;application/json&quot;&gt;{}&lt;/script&gt;
+
+
+    &lt;script src=&quot;/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/static/drf-yasg/insQ.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/static/drf-yasg/immutable.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/static/drf-yasg/swagger-ui-init.js&quot;&gt;&lt;/script&gt;
+
+
+    
+
+
+&lt;a id=&quot;oauth2-redirect-url&quot; href=&quot;/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html&quot; class=&quot;hidden&quot;&gt;&lt;/a&gt;
+
+
+    &lt;div id=&quot;django-session-auth&quot; class=&quot;hidden&quot;&gt;
+        
+            &lt;input type=&quot;hidden&quot; name=&quot;csrfmiddlewaretoken&quot; value=&quot;XigtIhIKWvkmeTKrlTAS1NKwpbLmTYIrlT7cDNJormVO2AwnmiIvmcS2f6VJzeKI&quot;&gt;
+
+            
+                
+            
+
+            
+                &lt;div class=&#x27;btn authorize&#x27;&gt;
+                    &lt;a id=&quot;auth&quot; class=&quot;header__btn&quot; href=&quot;/accounts/login/?next=/swagger/&quot; data-sw-translate&gt;
+                        
+                            Django Login
+                        
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            
+        
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre></section><section><h2>Register</h2><h3>Request</h3><pre>POST /api/auth/register/
+
+Headers:
+{
+  &quot;Content-Type&quot;: &quot;application/json&quot;
+}
+
+Body:
+{
+  &quot;username&quot;: &quot;screenshots_1788771513&quot;,
+  &quot;email&quot;: &quot;screenshots_1788771513@example.com&quot;,
+  &quot;password&quot;: &quot;ScreenshotsPass123!&quot;
+}</pre><h3>Response</h3><pre>Status: 201
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:35 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;POST, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;155&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;id&quot;: 7,
+    &quot;username&quot;: &quot;screenshots_1788771513&quot;,
+    &quot;email&quot;: &quot;screenshots_1788771513@example.com&quot;
+  },
+  &quot;message&quot;: &quot;Account created successfully.&quot;
+}</pre></section><section><h2>Login</h2><h3>Request</h3><pre>POST /api/auth/login/
+
+Headers:
+{
+  &quot;Content-Type&quot;: &quot;application/json&quot;
+}
+
+Body:
+{
+  &quot;username&quot;: &quot;screenshots_1788771513&quot;,
+  &quot;password&quot;: &quot;&lt;PASSWORD_REDACTED&gt;&quot;
+}</pre><h3>Response</h3><pre>Status: 200
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:40 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;POST, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;258&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;token&quot;: &quot;&lt;JWT_TOKEN_REDACTED&gt;&quot;,
+    &quot;user_id&quot;: 7,
+    &quot;username&quot;: &quot;screenshots_1788771513&quot;
+  },
+  &quot;message&quot;: &quot;Login successful.&quot;
+}</pre></section><section><h2>Products list</h2><h3>Request</h3><pre>GET /api/products/
+
+Headers:
+{
+  &quot;Accept&quot;: &quot;application/json&quot;
+}
+
+Body:
+</pre><h3>Response</h3><pre>Status: 200
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:40 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;GET, HEAD, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;502&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 4,
+      &quot;name&quot;: &quot;Monitor&quot;,
+      &quot;description&quot;: &quot;27 inch monitor&quot;,
+      &quot;price&quot;: &quot;12000.00&quot;,
+      &quot;stock_quantity&quot;: 0
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;Mouse&quot;,
+      &quot;description&quot;: &quot;Wireless mouse&quot;,
+      &quot;price&quot;: &quot;800.00&quot;,
+      &quot;stock_quantity&quot;: 2
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;Keyboard&quot;,
+      &quot;description&quot;: &quot;Mechanical keyboard&quot;,
+      &quot;price&quot;: &quot;1500.00&quot;,
+      &quot;stock_quantity&quot;: 15
+    },
+    {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Postman Test Product&quot;,
+      &quot;description&quot;: &quot;local endpoint test&quot;,
+      &quot;price&quot;: &quot;25.00&quot;,
+      &quot;stock_quantity&quot;: 9
+    }
+  ],
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;meta&quot;: {
+    &quot;page&quot;: 1,
+    &quot;page_size&quot;: 10,
+    &quot;total&quot;: 4,
+    &quot;total_pages&quot;: 1
+  }
+}</pre></section><section><h2>Products search</h2><h3>Request</h3><pre>GET /api/products/?search=keyboard
+
+Headers:
+{
+  &quot;Accept&quot;: &quot;application/json&quot;
+}
+
+Body:
+</pre><h3>Response</h3><pre>Status: 200
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:40 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;GET, HEAD, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;205&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;Keyboard&quot;,
+      &quot;description&quot;: &quot;Mechanical keyboard&quot;,
+      &quot;price&quot;: &quot;1500.00&quot;,
+      &quot;stock_quantity&quot;: 15
+    }
+  ],
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;meta&quot;: {
+    &quot;page&quot;: 1,
+    &quot;page_size&quot;: 10,
+    &quot;total&quot;: 1,
+    &quot;total_pages&quot;: 1
+  }
+}</pre></section><section><h2>Create order</h2><h3>Request</h3><pre>POST /api/orders/
+
+Headers:
+{
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Authorization&quot;: &quot;Bearer &lt;JWT_TOKEN_REDACTED&gt;&quot;
+}
+
+Body:
+{
+  &quot;items&quot;: [
+    {
+      &quot;product_id&quot;: 2,
+      &quot;quantity&quot;: 1
+    }
+  ]
+}</pre><h3>Response</h3><pre>Status: 201
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:41 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;POST, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;264&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;id&quot;: 7,
+    &quot;status&quot;: &quot;pending&quot;,
+    &quot;total_amount&quot;: &quot;1500.00&quot;,
+    &quot;created_at&quot;: &quot;2026-09-07T14:28:41.416689+05:30&quot;,
+    &quot;items&quot;: [
+      {
+        &quot;id&quot;: 8,
+        &quot;product&quot;: 2,
+        &quot;product_name&quot;: &quot;Keyboard&quot;,
+        &quot;quantity&quot;: 1,
+        &quot;price_at_purchase&quot;: &quot;1500.00&quot;
+      }
+    ]
+  },
+  &quot;message&quot;: &quot;Order created successfully.&quot;
+}</pre></section><section><h2>Order list</h2><h3>Request</h3><pre>GET /api/orders/list/
+
+Headers:
+{
+  &quot;Accept&quot;: &quot;application/json&quot;,
+  &quot;Authorization&quot;: &quot;Bearer &lt;JWT_TOKEN_REDACTED&gt;&quot;
+}
+
+Body:
+</pre><h3>Response</h3><pre>Status: 200
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:41 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;GET, HEAD, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;506&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 7,
+      &quot;status&quot;: &quot;pending&quot;,
+      &quot;total_amount&quot;: &quot;1500.00&quot;,
+      &quot;created_at&quot;: &quot;2026-09-07T14:28:41.416689+05:30&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;id&quot;: 8,
+          &quot;product&quot;: 2,
+          &quot;product_name&quot;: &quot;Keyboard&quot;,
+          &quot;quantity&quot;: 1,
+          &quot;price_at_purchase&quot;: &quot;1500.00&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;status&quot;: &quot;pending&quot;,
+      &quot;total_amount&quot;: &quot;1500.00&quot;,
+      &quot;created_at&quot;: &quot;2026-09-07T14:28:41.282827+05:30&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;id&quot;: 7,
+          &quot;product&quot;: 2,
+          &quot;product_name&quot;: &quot;Keyboard&quot;,
+          &quot;quantity&quot;: 1,
+          &quot;price_at_purchase&quot;: &quot;1500.00&quot;
+        }
+      ]
+    }
+  ],
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;meta&quot;: {
+    &quot;page&quot;: 1,
+    &quot;page_size&quot;: 10,
+    &quot;total&quot;: 2,
+    &quot;total_pages&quot;: 1
+  }
+}</pre></section><section><h2>Order detail</h2><h3>Request</h3><pre>GET /api/orders/6/
+
+Headers:
+{
+  &quot;Accept&quot;: &quot;application/json&quot;,
+  &quot;Authorization&quot;: &quot;Bearer &lt;JWT_TOKEN_REDACTED&gt;&quot;
+}
+
+Body:
+</pre><h3>Response</h3><pre>Status: 200
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:41 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Vary&quot;: &quot;Accept, Cookie&quot;,
+  &quot;Allow&quot;: &quot;GET, HEAD, OPTIONS&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;244&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: true,
+  &quot;data&quot;: {
+    &quot;id&quot;: 6,
+    &quot;status&quot;: &quot;pending&quot;,
+    &quot;total_amount&quot;: &quot;1500.00&quot;,
+    &quot;created_at&quot;: &quot;2026-09-07T14:28:41.282827+05:30&quot;,
+    &quot;items&quot;: [
+      {
+        &quot;id&quot;: 7,
+        &quot;product&quot;: 2,
+        &quot;product_name&quot;: &quot;Keyboard&quot;,
+        &quot;quantity&quot;: 1,
+        &quot;price_at_purchase&quot;: &quot;1500.00&quot;
+      }
+    ]
+  },
+  &quot;message&quot;: &quot;success&quot;
+}</pre></section><section><h2>Payment initiation</h2><h3>Request</h3><pre>POST /api/orders/6/pay/
+
+Headers:
+{
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;Authorization&quot;: &quot;Bearer &lt;JWT_TOKEN_REDACTED&gt;&quot;
+}
+
+Body:
+{}</pre><h3>Response</h3><pre>Status: 500
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:44 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;123110&quot;,
+  &quot;Vary&quot;: &quot;Cookie&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+  &lt;meta name=&quot;robots&quot; content=&quot;NONE,NOARCHIVE&quot;&gt;
+  &lt;title&gt;BadRequestError
+          at /api/orders/6/pay/&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; word-break: break-word; }
+    summary { cursor: pointer; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 10px 2px 40px; width: auto; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.cause { word-break: break-word; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands, summary.commands { margin-left: 40px; }
+    div.commands a, summary.commands { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  &lt;/style&gt;
+  
+  &lt;script&gt;
+    function hideAll(elems) {
+      for (var e = 0; e &lt; elems.length; e++) {
+        elems[e].style.display = &#x27;none&#x27;;
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll(&#x27;ol.pre-context&#x27;));
+      hideAll(document.querySelectorAll(&#x27;ol.post-context&#x27;));
+      hideAll(document.querySelectorAll(&#x27;div.pastebin&#x27;));
+    }
+    function toggle() {
+      for (var i = 0; i &lt; arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == &#x27;none&#x27; ? &#x27;block&#x27;: &#x27;none&#x27;;
+        }
+      }
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = &quot;Switch to copy-and-paste view&quot;;
+      s2 = &quot;Switch back to interactive view&quot;;
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle(&#x27;browserTraceback&#x27;, &#x27;pastebinTraceback&#x27;);
+      return false;
+    }
+  &lt;/script&gt;
+  
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;summary&quot;&gt;
+  &lt;h1&gt;BadRequestError
+       at /api/orders/6/pay/&lt;/h1&gt;
+  &lt;pre class=&quot;exception_value&quot;&gt;Authentication failed&lt;/pre&gt;
+  &lt;table class=&quot;meta&quot;&gt;
+
+    &lt;tr&gt;
+      &lt;th&gt;Request Method:&lt;/th&gt;
+      &lt;td&gt;POST&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Request URL:&lt;/th&gt;
+      &lt;td&gt;http://127.0.0.1:8000/api/orders/6/pay/&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;th&gt;Django Version:&lt;/th&gt;
+      &lt;td&gt;5.0.6&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;th&gt;Exception Type:&lt;/th&gt;
+      &lt;td&gt;BadRequestError&lt;/td&gt;
+    &lt;/tr&gt;
+
+
+    &lt;tr&gt;
+      &lt;th&gt;Exception Value:&lt;/th&gt;
+      &lt;td&gt;&lt;pre&gt;Authentication failed&lt;/pre&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+
+
+    &lt;tr&gt;
+      &lt;th&gt;Exception Location:&lt;/th&gt;
+      &lt;td&gt;&lt;span class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\client.py&lt;/span&gt;, line 137, in request&lt;/td&gt;
+    &lt;/tr&gt;
+
+
+    &lt;tr&gt;
+      &lt;th&gt;Raised during:&lt;/th&gt;
+      &lt;td&gt;services.views.payments.create_payment_view.CreatePaymentView&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+      &lt;th&gt;Python Executable:&lt;/th&gt;
+      &lt;td&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Scripts\python.exe&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Python Version:&lt;/th&gt;
+      &lt;td&gt;3.13.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Python Path:&lt;/th&gt;
+      &lt;td&gt;&lt;pre&gt;[&amp;#x27;C:\\Users\\Dell\\Downloads\\Orderflow_payment_project\\orderflow&amp;#x27;,
+ &amp;#x27;C:\\Users\\Dell\\Downloads\\Orderflow_payment_project\\orderflow&amp;#x27;,
+ &amp;#x27;C:\\Program Files\\Python313\\python313.zip&amp;#x27;,
+ &amp;#x27;C:\\Program Files\\Python313\\DLLs&amp;#x27;,
+ &amp;#x27;C:\\Program Files\\Python313\\Lib&amp;#x27;,
+ &amp;#x27;C:\\Program Files\\Python313&amp;#x27;,
+ &amp;#x27;C:\\Users\\Dell\\Downloads\\Orderflow_payment_project\\orderflow\\.venv&amp;#x27;,
+ &amp;#x27;C:\\Users\\Dell\\Downloads\\Orderflow_payment_project\\orderflow\\.venv\\Lib\\site-packages&amp;#x27;,
+ &amp;#x27;C:\\Users\\Dell\\Downloads\\Orderflow_payment_project\\orderflow\\.venv\\Lib\\site-packages\\setuptools\\_vendor&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Server time:&lt;/th&gt;
+      &lt;td&gt;Mon, 07 Sep 2026 14:28:43 +0530&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div id=&quot;traceback&quot;&gt;
+  &lt;h2&gt;Traceback &lt;span class=&quot;commands&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;return switchPastebinFriendly(this);&quot;&gt;
+    Switch to copy-and-paste view&lt;/a&gt;&lt;/span&gt;
+  &lt;/h2&gt;
+  &lt;div id=&quot;browserTraceback&quot;&gt;
+    &lt;ul class=&quot;traceback&quot;&gt;
+      
+        
+        &lt;li class=&quot;frame django&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\core\handlers\exception.py&lt;/code&gt;, line 55, in inner
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215925478080&quot;&gt;
+              
+                &lt;ol start=&quot;48&quot; class=&quot;pre-context&quot; id=&quot;pre2215925478080&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;        return inner&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;    else:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;        @wraps(get_response)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;        def inner(request):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;            try:&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;55&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;                response = get_response(request)
+                               ^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;56&#x27; class=&quot;post-context&quot; id=&quot;post2215925478080&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;            except Exception as exc:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;                response = response_for_exception(request, exc)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;            return response&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;        return inner&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925478080&#x27;, &#x27;post2215925478080&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215925478080&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;exc&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;BadRequestError(&amp;#x27;Authentication failed&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;get_response&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;bound method BaseHandler._get_response of &amp;lt;django.core.handlers.wsgi.WSGIHandler object at 0x00000203EF5256A0&amp;gt;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;WSGIRequest: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame django&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\core\handlers\base.py&lt;/code&gt;, line 197, in _get_response
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215925476160&quot;&gt;
+              
+                &lt;ol start=&quot;190&quot; class=&quot;pre-context&quot; id=&quot;pre2215925476160&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;        if response is None:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;            wrapped_callback = self.make_view_atomic(callback)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;            # If it is an asynchronous view, run it in a subthread.&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;            if iscoroutinefunction(wrapped_callback):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;                wrapped_callback = async_to_sync(wrapped_callback)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;            try:&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;197&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;                response = wrapped_callback(request, *callback_args, **callback_kwargs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;198&#x27; class=&quot;post-context&quot; id=&quot;post2215925476160&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;            except Exception as e:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;                response = self.process_exception_by_middleware(e, request)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;                if response is None:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;                    raise&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925476160&#x27;, &#x27;post2215925476160&#x27;)&quot;&gt;&lt;pre&gt;        # Complain if the view returned None (a common error).&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215925476160&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;callback&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;function View.as_view.&amp;lt;locals&amp;gt;.view at 0x00000203EF538180&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;callback_args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;callback_kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;middleware_method&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;bound method CsrfViewMiddleware.process_view of &amp;lt;CsrfViewMiddleware get_response=convert_exception_to_response.&amp;lt;locals&amp;gt;.inner&amp;gt;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;WSGIRequest: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;response&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;django.core.handlers.wsgi.WSGIHandler object at 0x00000203EF5256A0&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;wrapped_callback&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;function View.as_view.&amp;lt;locals&amp;gt;.view at 0x00000203EF538180&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\services\utils\authentication.py&lt;/code&gt;, line 63, in wrapper
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215925466688&quot;&gt;
+              
+                &lt;ol start=&quot;56&quot; class=&quot;pre-context&quot; id=&quot;pre2215925466688&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;            return JsonResponse({&amp;#x27;success&amp;#x27;: False, &amp;#x27;message&amp;#x27;: messages.TOKEN_EXPIRED}, status=401)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;        user = User.objects.filter(id=decoded.get(&amp;#x27;user_id&amp;#x27;), is_active=True).first()&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;        if not user:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;            return JsonResponse({&amp;#x27;success&amp;#x27;: False, &amp;#x27;message&amp;#x27;: messages.USER_NOT_FOUND}, status=401)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;        request.auth_user = user&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;63&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;        return view_func(request, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;64&#x27; class=&quot;post-context&quot; id=&quot;post2215925466688&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;    return wrapper&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;class Authentication:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925466688&#x27;, &#x27;post2215925466688&#x27;)&quot;&gt;&lt;pre&gt;    Mixin for class-based views that require a valid JWT.&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215925466688&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;auth_header&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;(&amp;#x27;Bearer &amp;#x27;
+ &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJpYXQiOjE3ODg3NzE1MTksImV4cCI6MTc4OTM3NjMxOX0.-d3em-wCJFjq-2sJlFw1FNWweSe4_LlKiGHEdKsobPI&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;decoded&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;exp&amp;#x27;: 1789376319, &amp;#x27;iat&amp;#x27;: 1788771519, &amp;#x27;user_id&amp;#x27;: 7}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;WSGIRequest: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;token&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJpYXQiOjE3ODg3NzE1MTksImV4cCI6MTc4OTM3NjMxOX0.-d3em-wCJFjq-2sJlFw1FNWweSe4_LlKiGHEdKsobPI&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;user&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;User: screenshots_1788771513&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;view_func&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;function View.as_view.&amp;lt;locals&amp;gt;.view at 0x00000203EF5380E0&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame django&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\views\decorators\csrf.py&lt;/code&gt;, line 65, in _view_wrapper
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215925475648&quot;&gt;
+              
+                &lt;ol start=&quot;58&quot; class=&quot;pre-context&quot; id=&quot;pre2215925475648&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;        async def _view_wrapper(request, *args, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;            return await view_func(request, *args, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;    else:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;        def _view_wrapper(request, *args, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;65&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;            return view_func(request, *args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;66&#x27; class=&quot;post-context&quot; id=&quot;post2215925475648&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;    _view_wrapper.csrf_exempt = True&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925475648&#x27;, &#x27;post2215925475648&#x27;)&quot;&gt;&lt;pre&gt;    return wraps(view_func)(_view_wrapper)&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215925475648&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;WSGIRequest: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;view_func&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;function View.as_view.&amp;lt;locals&amp;gt;.view at 0x00000203EF538040&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame django&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\views\generic\base.py&lt;/code&gt;, line 104, in view
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928005952&quot;&gt;
+              
+                &lt;ol start=&quot;97&quot; class=&quot;pre-context&quot; id=&quot;pre2215928005952&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;            self = cls(**initkwargs)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;            self.setup(request, *args, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;            if not hasattr(self, &amp;quot;request&amp;quot;):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;                raise AttributeError(&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;                    &amp;quot;%s instance has no &amp;#x27;request&amp;#x27; attribute. Did you override &amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;                    &amp;quot;setup() and forget to call super()?&amp;quot; % cls.__name__&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;                )&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;104&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;            return self.dispatch(request, *args, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;105&#x27; class=&quot;post-context&quot; id=&quot;post2215928005952&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;        view.view_class = cls&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;        view.view_initkwargs = initkwargs&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;        # __name__ and __qualname__ are intentionally left unchanged as&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928005952&#x27;, &#x27;post2215928005952&#x27;)&quot;&gt;&lt;pre&gt;        # view_class should be used to robustly determine the name of the view&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928005952&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;cls&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;class &amp;#x27;services.views.payments.create_payment_view.CreatePaymentView&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;initkwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;WSGIRequest: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&lt;/code&gt;, line 509, in dispatch
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215925481024&quot;&gt;
+              
+                &lt;ol start=&quot;502&quot; class=&quot;pre-context&quot; id=&quot;pre2215925481024&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;                                  self.http_method_not_allowed)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;            else:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;                handler = self.http_method_not_allowed&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;            response = handler(request, *args, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;        except Exception as exc:&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;509&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;            response = self.handle_exception(exc)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;510&#x27; class=&quot;post-context&quot; id=&quot;post2215925481024&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;        self.response = self.finalize_response(request, response, *args, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;        return self.response&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;    def options(self, request, *args, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215925481024&#x27;, &#x27;post2215925481024&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215925481024&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;handler&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;bound method CreatePaymentView.post of &amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;rest_framework.request.Request: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&lt;/code&gt;, line 469, in handle_exception
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928008320&quot;&gt;
+              
+                &lt;ol start=&quot;462&quot; class=&quot;pre-context&quot; id=&quot;pre2215928008320&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        exception_handler = self.get_exception_handler()&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        context = self.get_exception_handler_context()&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        response = exception_handler(exc, context)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        if response is None:&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;469&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;            self.raise_uncaught_exception(exc)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;470&#x27; class=&quot;post-context&quot; id=&quot;post2215928008320&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        response.exception = True&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        return response&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;    def raise_uncaught_exception(self, exc):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008320&#x27;, &#x27;post2215928008320&#x27;)&quot;&gt;&lt;pre&gt;        if settings.DEBUG:&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928008320&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;context&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;args&amp;#x27;: (),
+ &amp;#x27;kwargs&amp;#x27;: {&amp;#x27;order_id&amp;#x27;: 6},
+ &amp;#x27;request&amp;#x27;: &amp;lt;rest_framework.request.Request: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;,
+ &amp;#x27;view&amp;#x27;: &amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;exc&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;BadRequestError(&amp;#x27;Authentication failed&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;exception_handler&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;function exception_handler at 0x00000203EF3F9C60&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;response&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&lt;/code&gt;, line 480, in raise_uncaught_exception
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928008384&quot;&gt;
+              
+                &lt;ol start=&quot;473&quot; class=&quot;pre-context&quot; id=&quot;pre2215928008384&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;    def raise_uncaught_exception(self, exc):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;        if settings.DEBUG:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;            request = self.request&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;            renderer_format = getattr(request.accepted_renderer, &amp;#x27;format&amp;#x27;)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;            use_plaintext_traceback = renderer_format not in (&amp;#x27;html&amp;#x27;, &amp;#x27;api&amp;#x27;, &amp;#x27;admin&amp;#x27;)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;            request.force_plaintext_errors(use_plaintext_traceback)&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;480&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;        raise exc
+             ^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;481&#x27; class=&quot;post-context&quot; id=&quot;post2215928008384&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;    # Note: Views are made CSRF exempt from within `as_view` as to prevent&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;    # accidental removal of this exemption in cases where `dispatch` needs to&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;    # be overridden.&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;    def dispatch(self, request, *args, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928008384&#x27;, &#x27;post2215928008384&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928008384&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;exc&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;BadRequestError(&amp;#x27;Authentication failed&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;renderer_format&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;json&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;rest_framework.request.Request: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;use_plaintext_traceback&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&lt;/code&gt;, line 506, in dispatch
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928017664&quot;&gt;
+              
+                &lt;ol start=&quot;499&quot; class=&quot;pre-context&quot; id=&quot;pre2215928017664&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;            # Get the appropriate handler method&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;            if request.method.lower() in self.http_method_names:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;                handler = getattr(self, request.method.lower(),&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;                                  self.http_method_not_allowed)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;            else:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;                handler = self.http_method_not_allowed&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;506&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;            response = handler(request, *args, **kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;507&#x27; class=&quot;post-context&quot; id=&quot;post2215928017664&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;        except Exception as exc:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;            response = self.handle_exception(exc)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;        self.response = self.finalize_response(request, response, *args, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928017664&#x27;, &#x27;post2215928017664&#x27;)&quot;&gt;&lt;pre&gt;        return self.response&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928017664&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;handler&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;bound method CreatePaymentView.post of &amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;rest_framework.request.Request: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\services\views\payments\create_payment_view.py&lt;/code&gt;, line 54, in post
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928009088&quot;&gt;
+              
+                &lt;ol start=&quot;47&quot; class=&quot;pre-context&quot; id=&quot;pre2215928009088&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # while still holding the Order row lock from select_for_update()&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # above, so the lock is held for the duration of a network round&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # trip to Razorpay rather than just a DB write. For this project&amp;#x27;s&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # traffic level that&amp;#x27;s an acceptable simplification — the&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # alternative (release the lock, call Razorpay, re-acquire and&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # re-check) is more correct under high concurrency but adds&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # complexity this project doesn&amp;#x27;t need yet.&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;54&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            razorpay_order = client.order.create({
+                                 &lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;55&#x27; class=&quot;post-context&quot; id=&quot;post2215928009088&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;                &amp;#x27;amount&amp;#x27;: int(order.total_amount * 100),  # Razorpay expects paise&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;                &amp;#x27;currency&amp;#x27;: &amp;#x27;INR&amp;#x27;,&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;                &amp;#x27;receipt&amp;#x27;: f&amp;#x27;order_{order.id}&amp;#x27;,&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            })&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928009088&#x27;, &#x27;post2215928009088&#x27;)&quot;&gt;&lt;pre&gt;            # Reset the full payment state on every new attempt, not just the&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928009088&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;args&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;()&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;client&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;razorpay.client.Client object at 0x00000203EF71B390&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;existing_payment&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;order_id&amp;#x27;: 6}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;order&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;Order: Order #6 (pending)&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;request&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;rest_framework.request.Request: POST &amp;#x27;/api/orders/6/pay/&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;services.views.payments.create_payment_view.CreatePaymentView object at 0x00000203EF881550&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\resources\order.py&lt;/code&gt;, line 71, in create
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928007808&quot;&gt;
+              
+                &lt;ol start=&quot;64&quot; class=&quot;pre-context&quot; id=&quot;pre2215928007808&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;                &amp;#x27;notes&amp;#x27; : key value pair as notes&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;                &amp;#x27;payment_capture&amp;#x27;: 0/1 if payment should be auto captured or not&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;        Returns:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;            Order Dict which was created&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;        url = self.base_url&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;71&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;        return self.post_url(url, data, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;72&#x27; class=&quot;post-context&quot; id=&quot;post2215928007808&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;    &lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;    def edit(self, order_id, data={}, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;         Update order&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928007808&#x27;, &#x27;post2215928007808&#x27;)&quot;&gt;&lt;pre&gt;        Args:&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928007808&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;data&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;amount&amp;#x27;: 150000, &amp;#x27;currency&amp;#x27;: &amp;#x27;INR&amp;#x27;, &amp;#x27;receipt&amp;#x27;: &amp;#x27;order_6&amp;#x27;}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;razorpay.resources.order.Order object at 0x00000203EF5955B0&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;url&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/v1/orders&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\resources\base.py&lt;/code&gt;, line 20, in post_url
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215928074496&quot;&gt;
+              
+                &lt;ol start=&quot;13&quot; class=&quot;pre-context&quot; id=&quot;pre2215928074496&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;    def get_url(self, url, data, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;        return self.client.get(url, data, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;    def patch_url(self, url, data, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;        return self.client.patch(url, data, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;    def post_url(self, url, data, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;20&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;        return self.client.post(url, data, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;21&#x27; class=&quot;post-context&quot; id=&quot;post2215928074496&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;    def put_url(self, url, data, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;        return self.client.put(url, data, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;    def delete_url(self, url, data, **kwargs):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215928074496&#x27;, &#x27;post2215928074496&#x27;)&quot;&gt;&lt;pre&gt;        return self.client.delete(url, data, **kwargs)&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215928074496&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;data&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;amount&amp;#x27;: 150000, &amp;#x27;currency&amp;#x27;: &amp;#x27;INR&amp;#x27;, &amp;#x27;receipt&amp;#x27;: &amp;#x27;order_6&amp;#x27;}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;kwargs&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;razorpay.resources.order.Order object at 0x00000203EF5955B0&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;url&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/v1/orders&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\client.py&lt;/code&gt;, line 156, in post
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215927581120&quot;&gt;
+              
+                &lt;ol start=&quot;149&quot; class=&quot;pre-context&quot; id=&quot;pre2215927581120&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        return self.request(&amp;#x27;get&amp;#x27;, path, params=params, **options)&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;    def post(self, path, data, **options):&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        Parses POST request options and dispatches a request&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        data, options = self._update_request(data, options)&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;156&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        return self.request(&amp;#x27;post&amp;#x27;, path, data=data, **options)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;157&#x27; class=&quot;post-context&quot; id=&quot;post2215927581120&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;    def patch(self, path, data, **options):&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        Parses PATCH request options and dispatches a request&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927581120&#x27;, &#x27;post2215927581120&#x27;)&quot;&gt;&lt;pre&gt;        data, options = self._update_request(data, options)&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215927581120&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;data&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;{&amp;quot;amount&amp;quot;: 150000, &amp;quot;currency&amp;quot;: &amp;quot;INR&amp;quot;, &amp;quot;receipt&amp;quot;: &amp;quot;order_6&amp;quot;}&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;options&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;headers&amp;#x27;: {&amp;#x27;Content-type&amp;#x27;: &amp;#x27;application/json&amp;#x27;,
+             &amp;#x27;User-Agent&amp;#x27;: &amp;#x27;Razorpay-Python/1.4.2 &amp;#x27;}}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;path&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/v1/orders&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;razorpay.client.Client object at 0x00000203EF71B390&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+        
+        &lt;li class=&quot;frame user&quot;&gt;
+          
+            &lt;code class=&quot;fname&quot;&gt;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\client.py&lt;/code&gt;, line 137, in request
+          
+
+          
+            &lt;div class=&quot;context&quot; id=&quot;c2215927422016&quot;&gt;
+              
+                &lt;ol start=&quot;130&quot; class=&quot;pre-context&quot; id=&quot;pre2215927422016&quot;&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;            if &amp;#x27;error&amp;#x27; in json_response:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                if &amp;#x27;description&amp;#x27; in json_response[&amp;#x27;error&amp;#x27;]:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                    msg = json_response[&amp;#x27;error&amp;#x27;][&amp;#x27;description&amp;#x27;]&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                if &amp;#x27;code&amp;#x27; in json_response[&amp;#x27;error&amp;#x27;]:&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                    code = str(json_response[&amp;#x27;error&amp;#x27;][&amp;#x27;code&amp;#x27;])&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/li&gt;
+                
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;            if str.upper(code) == ERROR_CODE.BAD_REQUEST_ERROR:&lt;/pre&gt;&lt;/li&gt;
+                
+                &lt;/ol&gt;
+              
+              &lt;ol start=&quot;137&quot; class=&quot;context-line&quot;&gt;
+                &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                raise BadRequestError(msg)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^&lt;/pre&gt; &lt;span&gt;…&lt;/span&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+              
+                &lt;ol start=&#x27;138&#x27; class=&quot;post-context&quot; id=&quot;post2215927422016&quot;&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;            elif str.upper(code) == ERROR_CODE.GATEWAY_ERROR:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                raise GatewayError(msg)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;            elif str.upper(code) == ERROR_CODE.SERVER_ERROR: # nosemgrep : python.lang.maintainability.useless-ifelse.useless-if-body&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                raise ServerError(msg)&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;            else:&lt;/pre&gt;&lt;/li&gt;
+                  
+                  &lt;li onclick=&quot;toggle(&#x27;pre2215927422016&#x27;, &#x27;post2215927422016&#x27;)&quot;&gt;&lt;pre&gt;                raise ServerError(msg)&lt;/pre&gt;&lt;/li&gt;
+                  
+              &lt;/ol&gt;
+              
+            &lt;/div&gt;
+          
+
+          
+            
+              &lt;details&gt;
+                &lt;summary class=&quot;commands&quot;&gt;Local vars&lt;/summary&gt;
+            
+            &lt;table class=&quot;vars&quot; id=&quot;v2215927422016&quot;&gt;
+              &lt;thead&gt;
+                &lt;tr&gt;
+                  &lt;th&gt;Variable&lt;/th&gt;
+                  &lt;th&gt;Value&lt;/th&gt;
+                &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;code&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;BAD_REQUEST_ERROR&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;json_response&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;error&amp;#x27;: {&amp;#x27;code&amp;#x27;: &amp;#x27;BAD_REQUEST_ERROR&amp;#x27;, &amp;#x27;description&amp;#x27;: &amp;#x27;Authentication failed&amp;#x27;}}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;method&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;post&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;msg&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Authentication failed&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;options&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;data&amp;#x27;: &amp;#x27;{&amp;quot;amount&amp;quot;: 150000, &amp;quot;currency&amp;quot;: &amp;quot;INR&amp;quot;, &amp;quot;receipt&amp;quot;: &amp;quot;order_6&amp;quot;}&amp;#x27;,
+ &amp;#x27;headers&amp;#x27;: {&amp;#x27;Content-type&amp;#x27;: &amp;#x27;application/json&amp;#x27;,
+             &amp;#x27;User-Agent&amp;#x27;: &amp;#x27;Razorpay-Python/1.4.2 &amp;#x27;}}&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;path&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/v1/orders&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;response&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;Response [401]&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;self&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;razorpay.client.Client object at 0x00000203EF71B390&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+                  &lt;tr&gt;
+                    &lt;td&gt;url&lt;/td&gt;
+                    &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;https://api.razorpay.com/v1/orders&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+            &lt;/details&gt;
+          
+        &lt;/li&gt;
+      
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;form action=&quot;https://dpaste.com/&quot; name=&quot;pasteform&quot; id=&quot;pasteform&quot; method=&quot;post&quot;&gt;
+  &lt;div id=&quot;pastebinTraceback&quot; class=&quot;pastebin&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;language&quot; value=&quot;PythonConsole&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;title&quot;
+      value=&quot;BadRequestError at /api/orders/6/pay/&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;source&quot; value=&quot;Django Dpaste Agent&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;poster&quot; value=&quot;Django&quot;&gt;
+    &lt;textarea name=&quot;content&quot; id=&quot;traceback_area&quot; cols=&quot;140&quot; rows=&quot;25&quot;&gt;
+Environment:
+
+
+Request Method: POST
+Request URL: http://127.0.0.1:8000/api/orders/6/pay/
+
+Django Version: 5.0.6
+Python Version: 3.13.3
+Installed Applications:
+[&amp;#x27;django.contrib.admin&amp;#x27;,
+ &amp;#x27;django.contrib.auth&amp;#x27;,
+ &amp;#x27;django.contrib.contenttypes&amp;#x27;,
+ &amp;#x27;django.contrib.sessions&amp;#x27;,
+ &amp;#x27;django.contrib.messages&amp;#x27;,
+ &amp;#x27;django.contrib.staticfiles&amp;#x27;,
+ &amp;#x27;rest_framework&amp;#x27;,
+ &amp;#x27;django_filters&amp;#x27;,
+ &amp;#x27;drf_yasg&amp;#x27;,
+ &amp;#x27;services&amp;#x27;]
+Installed Middleware:
+[&amp;#x27;django.middleware.security.SecurityMiddleware&amp;#x27;,
+ &amp;#x27;django.contrib.sessions.middleware.SessionMiddleware&amp;#x27;,
+ &amp;#x27;django.middleware.common.CommonMiddleware&amp;#x27;,
+ &amp;#x27;django.middleware.csrf.CsrfViewMiddleware&amp;#x27;,
+ &amp;#x27;django.contrib.auth.middleware.AuthenticationMiddleware&amp;#x27;,
+ &amp;#x27;django.contrib.messages.middleware.MessageMiddleware&amp;#x27;,
+ &amp;#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&amp;#x27;]
+
+
+
+Traceback (most recent call last):
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\core\handlers\exception.py&quot;, line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\core\handlers\base.py&quot;, line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\services\utils\authentication.py&quot;, line 63, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\views\decorators\csrf.py&quot;, line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\django\views\generic\base.py&quot;, line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&quot;, line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&quot;, line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&quot;, line 480, in raise_uncaught_exception
+    raise exc
+    ^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\rest_framework\views.py&quot;, line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\services\views\payments\create_payment_view.py&quot;, line 54, in post
+    razorpay_order = client.order.create({
+                     
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\resources\order.py&quot;, line 71, in create
+    return self.post_url(url, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\resources\base.py&quot;, line 20, in post_url
+    return self.client.post(url, data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\client.py&quot;, line 156, in post
+    return self.request(&amp;#x27;post&amp;#x27;, path, data=data, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\Dell\Downloads\Orderflow_payment_project\orderflow\.venv\Lib\site-packages\razorpay\client.py&quot;, line 137, in request
+    raise BadRequestError(msg)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Exception Type: BadRequestError at /api/orders/6/pay/
+Exception Value: Authentication failed
+&lt;/textarea&gt;
+  &lt;br&gt;&lt;br&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Share this traceback on a public website&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+&lt;div id=&quot;requestinfo&quot;&gt;
+  &lt;h2&gt;Request information&lt;/h2&gt;
+
+
+  
+    &lt;h3 id=&quot;user-info&quot;&gt;USER&lt;/h3&gt;
+    &lt;p&gt;AnonymousUser&lt;/p&gt;
+  
+
+  &lt;h3 id=&quot;get-info&quot;&gt;GET&lt;/h3&gt;
+  
+    &lt;p&gt;No GET data&lt;/p&gt;
+  
+
+  &lt;h3 id=&quot;post-info&quot;&gt;POST&lt;/h3&gt;
+  
+    &lt;p&gt;No POST data&lt;/p&gt;
+  
+
+  &lt;h3 id=&quot;files-info&quot;&gt;FILES&lt;/h3&gt;
+  
+    &lt;p&gt;No FILES data&lt;/p&gt;
+  
+
+  &lt;h3 id=&quot;cookie-info&quot;&gt;COOKIES&lt;/h3&gt;
+  
+    &lt;p&gt;No cookie data&lt;/p&gt;
+  
+
+  &lt;h3 id=&quot;meta-info&quot;&gt;META&lt;/h3&gt;
+  &lt;table class=&quot;req&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Variable&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;AI_AGENT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;github_copilot_vscode_agent&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ALLUSERSPROFILE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\ProgramData&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;APPDATA&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Dell\\AppData\\Roaming&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;BUNDLED_DEBUGPY_PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;c:\\Users\\Dell\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\libs\\debugpy&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CHROME_CRASHPAD_PIPE_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;\\\\.\\pipe\\crashpad_7428_FHFHRINNSOEKZILT&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COLORTERM&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;truecolor&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COMMONPROGRAMFILES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Program Files\\Common Files&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COMMONPROGRAMFILES(X86)&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Program Files (x86)\\Common Files&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COMMONPROGRAMW6432&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Program Files\\Common Files&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COMPUTERNAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;DESKTOP-9821GDS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COMSPEC&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\WINDOWS\\system32\\cmd.exe&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CONTENT_LENGTH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;2&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CONTENT_TYPE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;application/json&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COPILOT_AGENT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;COPILOT_DEBUG_NONCE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;398bbe2971d9dfac6eaaa24b9b6b66d2&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEBIAN_FRONTEND&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;noninteractive&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DJANGO_DEBUG&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;True&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DJANGO_SECRET_KEY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DJANGO_SETTINGS_MODULE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow_core.settings&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DRIVERDATA&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Windows\\System32\\Drivers\\DriverData&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;GATEWAY_INTERFACE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;CGI/1.1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;GIT_ASKPASS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;GIT_EDITOR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;:&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;GIT_MERGE_AUTOEDIT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;no&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;GIT_PAGER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;cat&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HOMEDRIVE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HOMEPATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;\\Users\\Dell&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HTTP_ACCEPT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;*/*&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HTTP_ACCEPT_ENCODING&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;gzip, deflate&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HTTP_AUTHORIZATION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;(&amp;#x27;Bearer &amp;#x27;
+ &amp;#x27;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJpYXQiOjE3ODg3NzE1MTksImV4cCI6MTc4OTM3NjMxOX0.-d3em-wCJFjq-2sJlFw1FNWweSe4_LlKiGHEdKsobPI&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HTTP_CONNECTION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;keep-alive&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HTTP_HOST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;127.0.0.1:8000&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;HTTP_USER_AGENT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;python-requests/2.34.2&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;JWT_SECRET_KEY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANG&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;en_US.UTF-8&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOCALAPPDATA&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Dell\\AppData\\Local&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOGONSERVER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;\\\\DESKTOP-9821GDS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;NUMBER_OF_PROCESSORS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;4&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ONEDRIVE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Dell\\OneDrive&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ORDERFLOW_LOCAL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;True&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;OS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Windows_NT&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;(&amp;#x27;c:\\Users\\Dell\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand;c:\\Users\\Dell\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli;C:\\Program &amp;#x27;
+ &amp;#x27;Files\\Python313\\Scripts\\;C:\\Program &amp;#x27;
+ &amp;#x27;Files\\Python313\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program &amp;#x27;
+ &amp;#x27;Files\\dotnet\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine &amp;#x27;
+ &amp;#x27;Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine &amp;#x27;
+ &amp;#x27;Components\\DAL;C:\\Program Files\\Git\\cmd;C:\\Program Files &amp;#x27;
+ &amp;#x27;(x86)\\Microsoft SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft &amp;#x27;
+ &amp;#x27;SQL Server\\160\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL &amp;#x27;
+ &amp;#x27;Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft &amp;#x27;
+ &amp;#x27;SQL Server\\160\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL &amp;#x27;
+ &amp;#x27;Server\\160\\DTS\\Binn\\;C:\\Users\\Dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft &amp;#x27;
+ &amp;#x27;VS Code\\bin;C:\\Users\\Dell\\AppData\\Local\\Programs\\Azure Data &amp;#x27;
+ &amp;#x27;Studio\\bin;c:\\Users\\Dell\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PATHEXT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PATH_INFO&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/api/orders/6/pay/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;POSTGRES_DB&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;POSTGRES_HOST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;db&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;POSTGRES_PASSWORD&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;POSTGRES_PORT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;5432&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;POSTGRES_USER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow_user&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROCESSOR_ARCHITECTURE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;AMD64&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROCESSOR_IDENTIFIER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Intel64 Family 6 Model 78 Stepping 3, GenuineIntel&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROCESSOR_LEVEL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;6&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROCESSOR_REVISION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;4e03&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROGRAMDATA&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\ProgramData&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROGRAMFILES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Program Files&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROGRAMFILES(X86)&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Program Files (x86)&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PROGRAMW6432&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Program Files&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PSMODULEPATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;(&amp;#x27;C:\\Users\\Dell\\Documents\\WindowsPowerShell\\Modules;C:\\Program &amp;#x27;
+ &amp;#x27;Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program &amp;#x27;
+ &amp;#x27;Files (x86)\\Microsoft SQL Server\\160\\Tools\\PowerShell\\Modules\\&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PUBLIC&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Public&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PYDEVD_DISABLE_FILE_VALIDATION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PYTHONSTARTUP&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;c:\\Users\\Dell\\AppData\\Roaming\\Code\\User\\workspaceStorage\\5ba8279d4e081fb1bbcadc392cff424d\\ms-python.python\\pythonrc.py&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PYTHON_BASIC_REPL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;QUERY_STRING&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;RAZORPAY_KEY_ID&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;RAZORPAY_KEY_SECRET&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;RAZORPAY_WEBHOOK_SECRET&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;REDIS_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;redis://redis:6379/0&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;REMOTE_ADDR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;127.0.0.1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;REMOTE_HOST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;REQUEST_METHOD&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;POST&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SCRIPT_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SERVER_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;DESKTOP-9821GDS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SERVER_PORT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;8000&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SERVER_PROTOCOL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;HTTP/1.1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SERVER_SOFTWARE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;WSGIServer/0.2&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSIONNAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Console&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SYNAPROGDIR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Synaptics\\SynTP&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SYSTEMDRIVE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SYSTEMROOT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\WINDOWS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TEMP&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Dell\\AppData\\Local\\Temp&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TERM_PROGRAM&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;vscode&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TERM_PROGRAM_VERSION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1.136.0&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TMP&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Dell\\AppData\\Local\\Temp&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USERDOMAIN&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;DESKTOP-9821GDS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USERDOMAIN_ROAMINGPROFILE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;DESKTOP-9821GDS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USERNAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Dell&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USERPROFILE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\Users\\Dell&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_DEBUGPY_ADAPTER_ENDPOINTS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;c:\\Users\\Dell\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\.noConfigDebugAdapterEndpoints\\endpoint-49e2aa574b20ae36.txt&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_GIT_ASKPASS_EXTRA_ARGS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_GIT_ASKPASS_MAIN&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_GIT_ASKPASS_NODE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_GIT_IPC_HANDLE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;\\\\.\\pipe\\vscode-git-3a46bfa873-sock&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_INJECTION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;VSCODE_PYTHON_AUTOACTIVATE_GUARD&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;WINDIR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;C:\\WINDOWS&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ZES_ENABLE_SYSMAN&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;1&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.errors&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;_io.TextIOWrapper name=&amp;#x27;&amp;lt;stderr&amp;gt;&amp;#x27; mode=&amp;#x27;w&amp;#x27; encoding=&amp;#x27;utf-8&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.file_wrapper&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;class &amp;#x27;wsgiref.util.FileWrapper&amp;#x27;&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.input&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;django.core.handlers.wsgi.LimitedStream object at 0x00000203EF91EEF0&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.multiprocess&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.multithread&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.run_once&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.url_scheme&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;http&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;wsgi.version&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;(1, 0)&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+
+  &lt;h3 id=&quot;settings-info&quot;&gt;Settings&lt;/h3&gt;
+  &lt;h4&gt;Using settings module &lt;code&gt;orderflow_core.settings&lt;/code&gt;&lt;/h4&gt;
+  &lt;table class=&quot;req&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Setting&lt;/th&gt;
+        &lt;th&gt;Value&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ABSOLUTE_URL_OVERRIDES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ADMINS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ALLOWED_HOSTS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;*&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;APPEND_SLASH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;AUTHENTICATION_BACKENDS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;django.contrib.auth.backends.ModelBackend&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;AUTH_PASSWORD_VALIDATORS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;AUTH_USER_MODEL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;auth.User&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;BASE_DIR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;WindowsPath(&amp;#x27;C:/Users/Dell/Downloads/Orderflow_payment_project/orderflow&amp;#x27;)&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CACHES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;default&amp;#x27;: {&amp;#x27;BACKEND&amp;#x27;: &amp;#x27;django.core.cache.backends.locmem.LocMemCache&amp;#x27;,
+             &amp;#x27;LOCATION&amp;#x27;: &amp;#x27;orderflow-local&amp;#x27;}}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CACHE_MIDDLEWARE_ALIAS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;default&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CACHE_MIDDLEWARE_KEY_PREFIX&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CACHE_MIDDLEWARE_SECONDS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;600&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CELERY_ACCEPT_CONTENT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;json&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CELERY_BROKER_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;redis://redis:6379/0&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CELERY_RESULT_BACKEND&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;redis://redis:6379/0&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CELERY_RESULT_SERIALIZER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;json&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CELERY_TASK_SERIALIZER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;json&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CELERY_TIMEZONE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Asia/Kolkata&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_AGE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;31449600&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_DOMAIN&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_HTTPONLY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;csrftoken&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_SAMESITE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Lax&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_COOKIE_SECURE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_FAILURE_VIEW&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.views.csrf.csrf_failure&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_HEADER_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;HTTP_X_CSRFTOKEN&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_TRUSTED_ORIGINS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;CSRF_USE_SESSIONS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATABASES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;default&amp;#x27;: {&amp;#x27;ATOMIC_REQUESTS&amp;#x27;: False,
+             &amp;#x27;AUTOCOMMIT&amp;#x27;: True,
+             &amp;#x27;CONN_HEALTH_CHECKS&amp;#x27;: False,
+             &amp;#x27;CONN_MAX_AGE&amp;#x27;: 0,
+             &amp;#x27;ENGINE&amp;#x27;: &amp;#x27;django.db.backends.sqlite3&amp;#x27;,
+             &amp;#x27;HOST&amp;#x27;: &amp;#x27;&amp;#x27;,
+             &amp;#x27;NAME&amp;#x27;: WindowsPath(&amp;#x27;C:/Users/Dell/Downloads/Orderflow_payment_project/orderflow/db.sqlite3&amp;#x27;),
+             &amp;#x27;OPTIONS&amp;#x27;: {},
+             &amp;#x27;PASSWORD&amp;#x27;: &amp;#x27;********************&amp;#x27;,
+             &amp;#x27;PORT&amp;#x27;: &amp;#x27;&amp;#x27;,
+             &amp;#x27;TEST&amp;#x27;: {&amp;#x27;CHARSET&amp;#x27;: None,
+                      &amp;#x27;COLLATION&amp;#x27;: None,
+                      &amp;#x27;MIGRATE&amp;#x27;: True,
+                      &amp;#x27;MIRROR&amp;#x27;: None,
+                      &amp;#x27;NAME&amp;#x27;: None},
+             &amp;#x27;TIME_ZONE&amp;#x27;: None,
+             &amp;#x27;USER&amp;#x27;: &amp;#x27;&amp;#x27;}}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATABASE_ROUTERS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATA_UPLOAD_MAX_MEMORY_SIZE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;2621440&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATA_UPLOAD_MAX_NUMBER_FIELDS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;1000&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATA_UPLOAD_MAX_NUMBER_FILES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;100&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATETIME_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;N j, Y, P&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATETIME_INPUT_FORMATS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;%Y-%m-%d %H:%M:%S&amp;#x27;,
+ &amp;#x27;%Y-%m-%d %H:%M:%S.%f&amp;#x27;,
+ &amp;#x27;%Y-%m-%d %H:%M&amp;#x27;,
+ &amp;#x27;%m/%d/%Y %H:%M:%S&amp;#x27;,
+ &amp;#x27;%m/%d/%Y %H:%M:%S.%f&amp;#x27;,
+ &amp;#x27;%m/%d/%Y %H:%M&amp;#x27;,
+ &amp;#x27;%m/%d/%y %H:%M:%S&amp;#x27;,
+ &amp;#x27;%m/%d/%y %H:%M:%S.%f&amp;#x27;,
+ &amp;#x27;%m/%d/%y %H:%M&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATE_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;N j, Y&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DATE_INPUT_FORMATS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;%Y-%m-%d&amp;#x27;,
+ &amp;#x27;%m/%d/%Y&amp;#x27;,
+ &amp;#x27;%m/%d/%y&amp;#x27;,
+ &amp;#x27;%b %d %Y&amp;#x27;,
+ &amp;#x27;%b %d, %Y&amp;#x27;,
+ &amp;#x27;%d %b %Y&amp;#x27;,
+ &amp;#x27;%d %b, %Y&amp;#x27;,
+ &amp;#x27;%B %d %Y&amp;#x27;,
+ &amp;#x27;%B %d, %Y&amp;#x27;,
+ &amp;#x27;%d %B %Y&amp;#x27;,
+ &amp;#x27;%d %B, %Y&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEBUG&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEBUG_PROPAGATE_EXCEPTIONS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DECIMAL_SEPARATOR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;.&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_AUTO_FIELD&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.db.models.BigAutoField&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_CHARSET&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;utf-8&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_EXCEPTION_REPORTER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.views.debug.ExceptionReporter&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_EXCEPTION_REPORTER_FILTER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.views.debug.SafeExceptionReporterFilter&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_FILE_STORAGE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.core.files.storage.FileSystemStorage&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_FROM_EMAIL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow@example.com&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_INDEX_TABLESPACE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DEFAULT_TABLESPACE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;DISALLOWED_USER_AGENTS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_BACKEND&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.core.mail.backends.console.EmailBackend&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_HOST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;localhost&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_HOST_PASSWORD&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_HOST_USER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_PORT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;25&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_SSL_CERTFILE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_SSL_KEYFILE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_SUBJECT_PREFIX&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;[Django] &amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_TIMEOUT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_USE_LOCALTIME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_USE_SSL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;EMAIL_USE_TLS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FILE_UPLOAD_DIRECTORY_PERMISSIONS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FILE_UPLOAD_HANDLERS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&amp;#x27;,
+ &amp;#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FILE_UPLOAD_MAX_MEMORY_SIZE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;2621440&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FILE_UPLOAD_PERMISSIONS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;420&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FILE_UPLOAD_TEMP_DIR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FIRST_DAY_OF_WEEK&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;0&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FIXTURE_DIRS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FORCE_SCRIPT_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FORMAT_MODULE_PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FORMS_URLFIELD_ASSUME_HTTPS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;FORM_RENDERER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.forms.renderers.DjangoTemplates&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;IGNORABLE_404_URLS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;INSTALLED_APPS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;django.contrib.admin&amp;#x27;,
+ &amp;#x27;django.contrib.auth&amp;#x27;,
+ &amp;#x27;django.contrib.contenttypes&amp;#x27;,
+ &amp;#x27;django.contrib.sessions&amp;#x27;,
+ &amp;#x27;django.contrib.messages&amp;#x27;,
+ &amp;#x27;django.contrib.staticfiles&amp;#x27;,
+ &amp;#x27;rest_framework&amp;#x27;,
+ &amp;#x27;django_filters&amp;#x27;,
+ &amp;#x27;drf_yasg&amp;#x27;,
+ &amp;#x27;services&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;INTERNAL_IPS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;JWT_ALGORITHM&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;HS256&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;JWT_EXPIRATION_DELTA&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;datetime.timedelta(days=7)&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;JWT_SECRET_KEY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[(&amp;#x27;af&amp;#x27;, &amp;#x27;Afrikaans&amp;#x27;),
+ (&amp;#x27;ar&amp;#x27;, &amp;#x27;Arabic&amp;#x27;),
+ (&amp;#x27;ar-dz&amp;#x27;, &amp;#x27;Algerian Arabic&amp;#x27;),
+ (&amp;#x27;ast&amp;#x27;, &amp;#x27;Asturian&amp;#x27;),
+ (&amp;#x27;az&amp;#x27;, &amp;#x27;Azerbaijani&amp;#x27;),
+ (&amp;#x27;bg&amp;#x27;, &amp;#x27;Bulgarian&amp;#x27;),
+ (&amp;#x27;be&amp;#x27;, &amp;#x27;Belarusian&amp;#x27;),
+ (&amp;#x27;bn&amp;#x27;, &amp;#x27;Bengali&amp;#x27;),
+ (&amp;#x27;br&amp;#x27;, &amp;#x27;Breton&amp;#x27;),
+ (&amp;#x27;bs&amp;#x27;, &amp;#x27;Bosnian&amp;#x27;),
+ (&amp;#x27;ca&amp;#x27;, &amp;#x27;Catalan&amp;#x27;),
+ (&amp;#x27;ckb&amp;#x27;, &amp;#x27;Central Kurdish (Sorani)&amp;#x27;),
+ (&amp;#x27;cs&amp;#x27;, &amp;#x27;Czech&amp;#x27;),
+ (&amp;#x27;cy&amp;#x27;, &amp;#x27;Welsh&amp;#x27;),
+ (&amp;#x27;da&amp;#x27;, &amp;#x27;Danish&amp;#x27;),
+ (&amp;#x27;de&amp;#x27;, &amp;#x27;German&amp;#x27;),
+ (&amp;#x27;dsb&amp;#x27;, &amp;#x27;Lower Sorbian&amp;#x27;),
+ (&amp;#x27;el&amp;#x27;, &amp;#x27;Greek&amp;#x27;),
+ (&amp;#x27;en&amp;#x27;, &amp;#x27;English&amp;#x27;),
+ (&amp;#x27;en-au&amp;#x27;, &amp;#x27;Australian English&amp;#x27;),
+ (&amp;#x27;en-gb&amp;#x27;, &amp;#x27;British English&amp;#x27;),
+ (&amp;#x27;eo&amp;#x27;, &amp;#x27;Esperanto&amp;#x27;),
+ (&amp;#x27;es&amp;#x27;, &amp;#x27;Spanish&amp;#x27;),
+ (&amp;#x27;es-ar&amp;#x27;, &amp;#x27;Argentinian Spanish&amp;#x27;),
+ (&amp;#x27;es-co&amp;#x27;, &amp;#x27;Colombian Spanish&amp;#x27;),
+ (&amp;#x27;es-mx&amp;#x27;, &amp;#x27;Mexican Spanish&amp;#x27;),
+ (&amp;#x27;es-ni&amp;#x27;, &amp;#x27;Nicaraguan Spanish&amp;#x27;),
+ (&amp;#x27;es-ve&amp;#x27;, &amp;#x27;Venezuelan Spanish&amp;#x27;),
+ (&amp;#x27;et&amp;#x27;, &amp;#x27;Estonian&amp;#x27;),
+ (&amp;#x27;eu&amp;#x27;, &amp;#x27;Basque&amp;#x27;),
+ (&amp;#x27;fa&amp;#x27;, &amp;#x27;Persian&amp;#x27;),
+ (&amp;#x27;fi&amp;#x27;, &amp;#x27;Finnish&amp;#x27;),
+ (&amp;#x27;fr&amp;#x27;, &amp;#x27;French&amp;#x27;),
+ (&amp;#x27;fy&amp;#x27;, &amp;#x27;Frisian&amp;#x27;),
+ (&amp;#x27;ga&amp;#x27;, &amp;#x27;Irish&amp;#x27;),
+ (&amp;#x27;gd&amp;#x27;, &amp;#x27;Scottish Gaelic&amp;#x27;),
+ (&amp;#x27;gl&amp;#x27;, &amp;#x27;Galician&amp;#x27;),
+ (&amp;#x27;he&amp;#x27;, &amp;#x27;Hebrew&amp;#x27;),
+ (&amp;#x27;hi&amp;#x27;, &amp;#x27;Hindi&amp;#x27;),
+ (&amp;#x27;hr&amp;#x27;, &amp;#x27;Croatian&amp;#x27;),
+ (&amp;#x27;hsb&amp;#x27;, &amp;#x27;Upper Sorbian&amp;#x27;),
+ (&amp;#x27;hu&amp;#x27;, &amp;#x27;Hungarian&amp;#x27;),
+ (&amp;#x27;hy&amp;#x27;, &amp;#x27;Armenian&amp;#x27;),
+ (&amp;#x27;ia&amp;#x27;, &amp;#x27;Interlingua&amp;#x27;),
+ (&amp;#x27;id&amp;#x27;, &amp;#x27;Indonesian&amp;#x27;),
+ (&amp;#x27;ig&amp;#x27;, &amp;#x27;Igbo&amp;#x27;),
+ (&amp;#x27;io&amp;#x27;, &amp;#x27;Ido&amp;#x27;),
+ (&amp;#x27;is&amp;#x27;, &amp;#x27;Icelandic&amp;#x27;),
+ (&amp;#x27;it&amp;#x27;, &amp;#x27;Italian&amp;#x27;),
+ (&amp;#x27;ja&amp;#x27;, &amp;#x27;Japanese&amp;#x27;),
+ (&amp;#x27;ka&amp;#x27;, &amp;#x27;Georgian&amp;#x27;),
+ (&amp;#x27;kab&amp;#x27;, &amp;#x27;Kabyle&amp;#x27;),
+ (&amp;#x27;kk&amp;#x27;, &amp;#x27;Kazakh&amp;#x27;),
+ (&amp;#x27;km&amp;#x27;, &amp;#x27;Khmer&amp;#x27;),
+ (&amp;#x27;kn&amp;#x27;, &amp;#x27;Kannada&amp;#x27;),
+ (&amp;#x27;ko&amp;#x27;, &amp;#x27;Korean&amp;#x27;),
+ (&amp;#x27;ky&amp;#x27;, &amp;#x27;Kyrgyz&amp;#x27;),
+ (&amp;#x27;lb&amp;#x27;, &amp;#x27;Luxembourgish&amp;#x27;),
+ (&amp;#x27;lt&amp;#x27;, &amp;#x27;Lithuanian&amp;#x27;),
+ (&amp;#x27;lv&amp;#x27;, &amp;#x27;Latvian&amp;#x27;),
+ (&amp;#x27;mk&amp;#x27;, &amp;#x27;Macedonian&amp;#x27;),
+ (&amp;#x27;ml&amp;#x27;, &amp;#x27;Malayalam&amp;#x27;),
+ (&amp;#x27;mn&amp;#x27;, &amp;#x27;Mongolian&amp;#x27;),
+ (&amp;#x27;mr&amp;#x27;, &amp;#x27;Marathi&amp;#x27;),
+ (&amp;#x27;ms&amp;#x27;, &amp;#x27;Malay&amp;#x27;),
+ (&amp;#x27;my&amp;#x27;, &amp;#x27;Burmese&amp;#x27;),
+ (&amp;#x27;nb&amp;#x27;, &amp;#x27;Norwegian Bokmål&amp;#x27;),
+ (&amp;#x27;ne&amp;#x27;, &amp;#x27;Nepali&amp;#x27;),
+ (&amp;#x27;nl&amp;#x27;, &amp;#x27;Dutch&amp;#x27;),
+ (&amp;#x27;nn&amp;#x27;, &amp;#x27;Norwegian Nynorsk&amp;#x27;),
+ (&amp;#x27;os&amp;#x27;, &amp;#x27;Ossetic&amp;#x27;),
+ (&amp;#x27;pa&amp;#x27;, &amp;#x27;Punjabi&amp;#x27;),
+ (&amp;#x27;pl&amp;#x27;, &amp;#x27;Polish&amp;#x27;),
+ (&amp;#x27;pt&amp;#x27;, &amp;#x27;Portuguese&amp;#x27;),
+ (&amp;#x27;pt-br&amp;#x27;, &amp;#x27;Brazilian Portuguese&amp;#x27;),
+ (&amp;#x27;ro&amp;#x27;, &amp;#x27;Romanian&amp;#x27;),
+ (&amp;#x27;ru&amp;#x27;, &amp;#x27;Russian&amp;#x27;),
+ (&amp;#x27;sk&amp;#x27;, &amp;#x27;Slovak&amp;#x27;),
+ (&amp;#x27;sl&amp;#x27;, &amp;#x27;Slovenian&amp;#x27;),
+ (&amp;#x27;sq&amp;#x27;, &amp;#x27;Albanian&amp;#x27;),
+ (&amp;#x27;sr&amp;#x27;, &amp;#x27;Serbian&amp;#x27;),
+ (&amp;#x27;sr-latn&amp;#x27;, &amp;#x27;Serbian Latin&amp;#x27;),
+ (&amp;#x27;sv&amp;#x27;, &amp;#x27;Swedish&amp;#x27;),
+ (&amp;#x27;sw&amp;#x27;, &amp;#x27;Swahili&amp;#x27;),
+ (&amp;#x27;ta&amp;#x27;, &amp;#x27;Tamil&amp;#x27;),
+ (&amp;#x27;te&amp;#x27;, &amp;#x27;Telugu&amp;#x27;),
+ (&amp;#x27;tg&amp;#x27;, &amp;#x27;Tajik&amp;#x27;),
+ (&amp;#x27;th&amp;#x27;, &amp;#x27;Thai&amp;#x27;),
+ (&amp;#x27;tk&amp;#x27;, &amp;#x27;Turkmen&amp;#x27;),
+ (&amp;#x27;tr&amp;#x27;, &amp;#x27;Turkish&amp;#x27;),
+ (&amp;#x27;tt&amp;#x27;, &amp;#x27;Tatar&amp;#x27;),
+ (&amp;#x27;udm&amp;#x27;, &amp;#x27;Udmurt&amp;#x27;),
+ (&amp;#x27;ug&amp;#x27;, &amp;#x27;Uyghur&amp;#x27;),
+ (&amp;#x27;uk&amp;#x27;, &amp;#x27;Ukrainian&amp;#x27;),
+ (&amp;#x27;ur&amp;#x27;, &amp;#x27;Urdu&amp;#x27;),
+ (&amp;#x27;uz&amp;#x27;, &amp;#x27;Uzbek&amp;#x27;),
+ (&amp;#x27;vi&amp;#x27;, &amp;#x27;Vietnamese&amp;#x27;),
+ (&amp;#x27;zh-hans&amp;#x27;, &amp;#x27;Simplified Chinese&amp;#x27;),
+ (&amp;#x27;zh-hant&amp;#x27;, &amp;#x27;Traditional Chinese&amp;#x27;)]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGES_BIDI&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;he&amp;#x27;, &amp;#x27;ar&amp;#x27;, &amp;#x27;ar-dz&amp;#x27;, &amp;#x27;ckb&amp;#x27;, &amp;#x27;fa&amp;#x27;, &amp;#x27;ug&amp;#x27;, &amp;#x27;ur&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_CODE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;en-us&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_AGE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_DOMAIN&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_HTTPONLY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django_language&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_SAMESITE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LANGUAGE_COOKIE_SECURE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOCALE_PATHS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOGGING&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOGGING_CONFIG&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;logging.config.dictConfig&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOGIN_REDIRECT_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/accounts/profile/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOGIN_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/accounts/login/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;LOGOUT_REDIRECT_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MANAGERS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MEDIA_ROOT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MEDIA_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MESSAGE_STORAGE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.contrib.messages.storage.fallback.FallbackStorage&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MIDDLEWARE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;django.middleware.security.SecurityMiddleware&amp;#x27;,
+ &amp;#x27;django.contrib.sessions.middleware.SessionMiddleware&amp;#x27;,
+ &amp;#x27;django.middleware.common.CommonMiddleware&amp;#x27;,
+ &amp;#x27;django.middleware.csrf.CsrfViewMiddleware&amp;#x27;,
+ &amp;#x27;django.contrib.auth.middleware.AuthenticationMiddleware&amp;#x27;,
+ &amp;#x27;django.contrib.messages.middleware.MessageMiddleware&amp;#x27;,
+ &amp;#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MIGRATION_MODULES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;MONTH_DAY_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;F j&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;NUMBER_GROUPING&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;0&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PASSWORD_HASHERS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PASSWORD_RESET_TIMEOUT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;PREPEND_WWW&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;RAZORPAY_KEY_ID&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;RAZORPAY_KEY_SECRET&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;RAZORPAY_WEBHOOK_SECRET&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;REDIS_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;redis://redis:6379/0&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;REST_FRAMEWORK&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;DEFAULT_FILTER_BACKENDS&amp;#x27;: [&amp;#x27;django_filters.rest_framework.DjangoFilterBackend&amp;#x27;],
+ &amp;#x27;DEFAULT_PAGINATION_CLASS&amp;#x27;: &amp;#x27;services.utils.pagination.StandardResultsPagination&amp;#x27;,
+ &amp;#x27;PAGE_SIZE&amp;#x27;: 10}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;ROOT_URLCONF&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow_core.urls&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECRET_KEY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECRET_KEY_FALLBACKS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;********************&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_CONTENT_TYPE_NOSNIFF&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_CROSS_ORIGIN_OPENER_POLICY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;same-origin&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_HSTS_INCLUDE_SUBDOMAINS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_HSTS_PRELOAD&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_HSTS_SECONDS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;0&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_PROXY_SSL_HEADER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_REDIRECT_EXEMPT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_REFERRER_POLICY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;same-origin&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_SSL_HOST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SECURE_SSL_REDIRECT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SERVER_EMAIL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;root@localhost&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_CACHE_ALIAS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;default&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_AGE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;1209600&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_DOMAIN&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_HTTPONLY&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_NAME&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;sessionid&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_SAMESITE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Lax&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_COOKIE_SECURE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_ENGINE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.contrib.sessions.backends.db&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_EXPIRE_AT_BROWSER_CLOSE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_FILE_PATH&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_SAVE_EVERY_REQUEST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SESSION_SERIALIZER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.contrib.sessions.serializers.JSONSerializer&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SETTINGS_MODULE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow_core.settings&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SHORT_DATETIME_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;m/d/Y P&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SHORT_DATE_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;m/d/Y&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SIGNING_BACKEND&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.core.signing.TimestampSigner&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SILENCED_SYSTEM_CHECKS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;STATICFILES_DIRS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;STATICFILES_FINDERS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;django.contrib.staticfiles.finders.FileSystemFinder&amp;#x27;,
+ &amp;#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;STATICFILES_STORAGE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.contrib.staticfiles.storage.StaticFilesStorage&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;STATIC_ROOT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;None&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;STATIC_URL&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;/static/&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;STORAGES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;default&amp;#x27;: {&amp;#x27;BACKEND&amp;#x27;: &amp;#x27;django.core.files.storage.FileSystemStorage&amp;#x27;},
+ &amp;#x27;staticfiles&amp;#x27;: {&amp;#x27;BACKEND&amp;#x27;: &amp;#x27;django.contrib.staticfiles.storage.StaticFilesStorage&amp;#x27;}}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;SWAGGER_SETTINGS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;{&amp;#x27;SECURITY_DEFINITIONS&amp;#x27;: {&amp;#x27;Bearer&amp;#x27;: {&amp;#x27;in&amp;#x27;: &amp;#x27;header&amp;#x27;,
+                                     &amp;#x27;name&amp;#x27;: &amp;#x27;Authorization&amp;#x27;,
+                                     &amp;#x27;type&amp;#x27;: &amp;#x27;apiKey&amp;#x27;}}}&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TEMPLATES&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[{&amp;#x27;APP_DIRS&amp;#x27;: True,
+  &amp;#x27;BACKEND&amp;#x27;: &amp;#x27;django.template.backends.django.DjangoTemplates&amp;#x27;,
+  &amp;#x27;DIRS&amp;#x27;: [WindowsPath(&amp;#x27;C:/Users/Dell/Downloads/Orderflow_payment_project/orderflow/services/templates&amp;#x27;)],
+  &amp;#x27;OPTIONS&amp;#x27;: {&amp;#x27;context_processors&amp;#x27;: [&amp;#x27;django.template.context_processors.debug&amp;#x27;,
+                                     &amp;#x27;django.template.context_processors.request&amp;#x27;,
+                                     &amp;#x27;django.contrib.auth.context_processors.auth&amp;#x27;,
+                                     &amp;#x27;django.contrib.messages.context_processors.messages&amp;#x27;]}}]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TEST_NON_SERIALIZED_APPS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TEST_RUNNER&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;django.test.runner.DiscoverRunner&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;THOUSAND_SEPARATOR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;,&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TIME_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;P&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TIME_INPUT_FORMATS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;[&amp;#x27;%H:%M:%S&amp;#x27;, &amp;#x27;%H:%M:%S.%f&amp;#x27;, &amp;#x27;%H:%M&amp;#x27;]&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;TIME_ZONE&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;Asia/Kolkata&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USE_I18N&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USE_THOUSAND_SEPARATOR&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USE_TZ&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;True&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USE_X_FORWARDED_HOST&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;USE_X_FORWARDED_PORT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;False&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;WSGI_APPLICATION&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;orderflow_core.wsgi.application&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;X_FRAME_OPTIONS&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;DENY&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+        &lt;tr&gt;
+          &lt;td&gt;YEAR_MONTH_FORMAT&lt;/td&gt;
+          &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;#x27;F Y&amp;#x27;&lt;/pre&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+&lt;/div&gt;
+
+  &lt;div id=&quot;explanation&quot;&gt;
+    &lt;p&gt;
+      You’re seeing this error because you have &lt;code&gt;DEBUG = True&lt;/code&gt; in your
+      Django settings file. Change that to &lt;code&gt;False&lt;/code&gt;, and Django will
+      display a standard page generated by the handler for this status code.
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></section><section><h2>Webhook invalid signature</h2><h3>Request</h3><pre>POST /api/webhook/razorpay/
+
+Headers:
+{
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;X-Razorpay-Signature&quot;: &quot;&lt;INVALID_SIGNATURE_FOR_TEST&gt;&quot;
+}
+
+Body:
+{}</pre><h3>Response</h3><pre>Status: 400
+
+Headers:
+{
+  &quot;Date&quot;: &quot;Mon, 07 Sep 2026 08:58:44 GMT&quot;,
+  &quot;Server&quot;: &quot;WSGIServer/0.2 CPython/3.13.3&quot;,
+  &quot;Content-Type&quot;: &quot;application/json&quot;,
+  &quot;X-Frame-Options&quot;: &quot;DENY&quot;,
+  &quot;Content-Length&quot;: &quot;59&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Referrer-Policy&quot;: &quot;same-origin&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin&quot;
+}
+
+Body:
+{
+  &quot;success&quot;: false,
+  &quot;message&quot;: &quot;Invalid webhook signature.&quot;
+}</pre></section></body></html>

@@ -122,7 +122,14 @@ docker-compose exec web python manage.py test
 Live Swagger and API response screenshots are available in [`docs/screenshots/`](docs/screenshots/):
 
 - `swagger-overview.png` - complete endpoint catalogue
-- `products-list.png` - live response with status, headers, and JSON body
+- `auth-register.png` - register request and response
+- `auth-login.png` - login request and JWT response
+- `products-list-complete.png` - products request, headers, and response body
+- `orders-create.png` - create-order request and response
+- `orders-list.png` - authenticated order-list response
+- `orders-detail.png` - authenticated order-detail response
+- `payment-create.png` - payment request and Razorpay configuration response
+- `webhook-response.png` - webhook request, signature header, and response
 
 31 tests covering: registration, login, product search + pagination meta, order creation (success,
 insufficient stock, duplicate product in one request, missing/malformed auth header), order list scoping
